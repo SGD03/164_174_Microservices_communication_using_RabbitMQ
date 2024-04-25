@@ -31,5 +31,6 @@ def callback(ch, method, properties, body):
 # Consume the queue
 channel.basic_consume(queue='health_check', on_message_callback=callback)
 
-print(' [*] Waiting for messages. To exit press CTRL+C')
+#Debug Statement
+print(' [*] Waiting for messages. To exit press ctrl+c')
 channel.start_consuming()
